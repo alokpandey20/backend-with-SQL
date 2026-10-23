@@ -7,7 +7,7 @@ const express= require("express");
 const app=express(); 
 
 require("dotenv").config();
-const mysql = require("mysql2");
+
 
 const connection = mysql.createConnection({
     host: "localhost",
