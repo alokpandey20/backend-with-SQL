@@ -6,14 +6,14 @@ const mysql =require("mysql2");
 const express= require("express");
 const app=express(); 
 
+require("dotenv").config();
+const mysql = require("mysql2");
 
-
-
-const connection=mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    database:'delta_app',
-    password:'******'
+const connection = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    database: "delta_app",
+    password: process.env.DB_PASSWORD
 });
 
 
