@@ -1,0 +1,28 @@
+table{
+    border-collapse:collapse;
+    width:100%;
+}
+
+table,th,td{
+    border: 1px solid black;
+}
+
+th,td{
+    padding :10px;
+    text-align: left;
+}
+
+#searchEmail{
+    padding:8px;
+    width:280px;
+    margin-bottom:15px;
+}
+
+.highlight{
+    background-color:yellow;
+}
+
+#noResult{
+    display: none;
+    margin-top:10px;
+}

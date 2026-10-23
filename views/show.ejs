@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Users </title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2> All users </h2>
+    <label for="searchemail">Search by email :</label>
+    <input type="text" id="searchEmail" placeholder="enter email" >
+    <p id="noResult">No matching users found</p> 
+     <table>
+        <thead>
+        <tr> 
+        <th>Id</th>
+        <th>Email</th>
+        <th>Username</th>
+        </tr>
+    </thead>
+    <tbody id="userTable">
+       <% for(user of users){ %>
+    <tr>
+        <td><%=user.id%></td>
+        <td class="userEmail"><%= user.email %></td>
+        <td><%= user.username %></td>
+         <td>
+            <form method="get" action="/user/<%=user.id %>/edit">
+            <button> Edit Username </button>
+            </form>
+        </td>
+        <td>
+            <form method="get" action="/user/<%=user.id%>/delete">
+                <button>Delete</button>
+            </form>
+        </td>
+    </tr>
+
+<%}  %>
+
+</tbody>
+     </table>
+     
+    
+     <script src="/app.js" ></script>
+</body>
+</html>
+

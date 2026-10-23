@@ -1,0 +1,20 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 33060,
+            "driver": "MySQL",
+            "username": "root",
+            "database": "delta_app",
+            "name": "Node connection",
+            "password": "Alok@1234",
+            "connectionTimeout": 30
+        }
+    ]
+}
